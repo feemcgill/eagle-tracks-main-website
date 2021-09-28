@@ -16,7 +16,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/213l.gif' }],
   },
-
+  googleAnalytics: {
+    id: 'UA-158456330-1',
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/styles/global.scss'],
   styleResources: {
@@ -29,7 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxtjs/google-analytics'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['nuxt-lazy-load'],
