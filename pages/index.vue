@@ -11,7 +11,7 @@
           <li class="legend">Useful Links: </li>
           <!-- <li><img src="sirheistbullets2.gif" alt=""><a href="https://square-community.eagletracks.net/">Square Community</a> Latest vibe!!!!!</li> -->
           <li><img src="sirheistbullets2.gif" alt=""><a href="https://vol1.eagletracks.net/">Check out Vol 1!</a> </li>
-          <li><img src="sirheistbullets2.gif" alt=""><a href="https://nopressurerecords.bandcamp.com/">No Pressure Records</a></li>
+          <li><img src="sirheistbullets2.gif" alt=""><a target="_blank" href="https://nopressurerecords.bandcamp.com/">No Pressure Records</a></li>
         </ul>
       </div>
       <div class="images">
@@ -20,7 +20,9 @@
        
         <div></div>
       </div>
-      <img src="dance_1.gif" alt="">
+      <a class="devgru-link" target="_blank" href="https://devgru.la">
+        <img src="dance_1.gif" alt="">
+     </a>        
       <img src="outlettdrugs7.gif" alt="">
       <img src="outlettrated2.gif" alt="">
       <img src="213l.gif" alt=""><img src="213l.gif" alt="">
@@ -97,7 +99,10 @@ export default {
   }
 }  
 
-
+.devgru-link {
+  background: transparent;
+  text-decoration: none;
+}
 .big-bottom {
   img {
     width: auto;
