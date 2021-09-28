@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="https://eagletracks.net/img/flying-eag.186650ae.gif" ref="eagle" class="eagle" v-on:click="screetch" />
+    <img src="/eag.gif" ref="eagle" class="eagle" v-on:click="screetch" data-not-lazy />
   </div>
 </template>
 
@@ -9,7 +9,6 @@ import gsap from 'gsap'
 const sound_1 = '/mp3/hawk.mp3';
 const sound_2 = '/mp3/eagle.mp3';
 const sound_3 = '/mp3/crows.mp3';
-// import sound_4 from '../assets/mp3/lazer.mp3'
 
 export default {
   name: 'FlyingEagle',
@@ -32,7 +31,7 @@ export default {
   methods: {
     set () {
       gsap.set(this.$refs.eagle, {
-        x: -this.$refs.eagle.offsetWidth,
+        x: -260,
         y: Math.floor(Math.random() * Math.floor(window.innerHeight)),
         alpha: 1
       })
@@ -61,14 +60,13 @@ export default {
     this.soundIndex = Math.floor(Math.random() * this.sounds.length)
     this.sound = new Audio(this.sounds[this.soundIndex])
     this.sound.onended = () => {
-      console.log('ended')
       this.nextTrack()
     }
     this.set()
     this.fly()
     this.timer = setInterval(() => {
       this.fly()
-    }, 25000);
+    }, 12000);
   },
   beforeDestroy () {
     clearInterval(this.timer)
@@ -79,13 +77,15 @@ export default {
 
 <style scoped>
 .eagle {
-  display: inline-block;
+  display: block;
   position: fixed;
   width: 260px;
   height: 275px;
   object-fit: cover;
   opacity: 0;
   cursor: not-allowed;
-  z-index: 1000000;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
 }
 </style>
