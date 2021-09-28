@@ -1,0 +1,21 @@
+@import 'reset';
+@import 'resources/mixins';
+
+body {
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+a {
+  text-decoration: none;
+  color: greenyellow;
+  background: navy;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  @include max-1600;
+}
