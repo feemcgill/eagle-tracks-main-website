@@ -9,7 +9,7 @@
         <div>This is our main home on the internet. </div>
         <ul>
           <li class="legend">Useful Links: </li>
-          <!-- <li><img src="sirheistbullets2.gif" alt=""><a href="https://square-community.eagletracks.net/">Square Community</a> Latest vibe!!!!!</li> -->
+          <li><img src="sirheistbullets2.gif" alt=""><a href="https://square-community.eagletracks.net/">Square Community</a> Latest vibe!!!!!</li>
           <li><img src="sirheistbullets2.gif" alt=""><a href="https://vol1.eagletracks.net/">Check out Vol 1!</a> </li>
           <li><img src="sirheistbullets2.gif" alt=""><a target="_blank" href="https://nopressurerecords.bandcamp.com/">No Pressure Records</a></li>
         </ul>
